@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		449331FE1AF017BA0032B29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449331FD1AF017BA0032B29E /* AppDelegate.swift */; };
 		449332011AF017BA0032B29E /* LoginProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 449331FF1AF017BA0032B29E /* LoginProject.xcdatamodeld */; };
-		449332031AF017BA0032B29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449332021AF017BA0032B29E /* ViewController.swift */; };
 		449332061AF017BA0032B29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449332041AF017BA0032B29E /* Main.storyboard */; };
 		449332081AF017BA0032B29E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449332071AF017BA0032B29E /* Images.xcassets */; };
 		4493320B1AF017BA0032B29E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449332091AF017BA0032B29E /* LaunchScreen.xib */; };
 		449332171AF017BA0032B29E /* LoginProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449332161AF017BA0032B29E /* LoginProjectTests.swift */; };
+		449332211AF018170032B29E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449332201AF018170032B29E /* LoginViewController.swift */; };
+		449332231AF0181F0032B29E /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449332221AF0181F0032B29E /* CreateAccountViewController.swift */; };
+		449332251AF0183A0032B29E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449332241AF0183A0032B29E /* MainViewController.swift */; };
+		449C98C01AF052D60039A749 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 449C98BF1AF052D60039A749 /* LocalAuthentication.framework */; };
+		449C98C21AF055F90039A749 /* Authenticate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449C98C11AF055F90039A749 /* Authenticate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		449331FC1AF017B90032B29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449331FD1AF017BA0032B29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449332001AF017BA0032B29E /* LoginProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginProject.xcdatamodel; sourceTree = "<group>"; };
-		449332021AF017BA0032B29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		449332051AF017BA0032B29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		449332071AF017BA0032B29E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4493320A1AF017BA0032B29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		449332101AF017BA0032B29E /* LoginProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		449332151AF017BA0032B29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		449332161AF017BA0032B29E /* LoginProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProjectTests.swift; sourceTree = "<group>"; };
+		449332201AF018170032B29E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		449332221AF0181F0032B29E /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		449332241AF0183A0032B29E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		449C98BF1AF052D60039A749 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		449C98C11AF055F90039A749 /* Authenticate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				449C98C01AF052D60039A749 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				449331FD1AF017BA0032B29E /* AppDelegate.swift */,
-				449332021AF017BA0032B29E /* ViewController.swift */,
+				449332201AF018170032B29E /* LoginViewController.swift */,
+				449C98C11AF055F90039A749 /* Authenticate.swift */,
+				449332241AF0183A0032B29E /* MainViewController.swift */,
+				449332221AF0181F0032B29E /* CreateAccountViewController.swift */,
 				449332041AF017BA0032B29E /* Main.storyboard */,
 				449332071AF017BA0032B29E /* Images.xcassets */,
 				449332091AF017BA0032B29E /* LaunchScreen.xib */,
@@ -93,6 +105,7 @@
 		449331FB1AF017B90032B29E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				449C98BF1AF052D60039A749 /* LocalAuthentication.framework */,
 				449331FC1AF017B90032B29E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,9 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				449332031AF017BA0032B29E /* ViewController.swift in Sources */,
+				449332231AF0181F0032B29E /* CreateAccountViewController.swift in Sources */,
+				449332211AF018170032B29E /* LoginViewController.swift in Sources */,
+				449C98C21AF055F90039A749 /* Authenticate.swift in Sources */,
 				449331FE1AF017BA0032B29E /* AppDelegate.swift in Sources */,
 				449332011AF017BA0032B29E /* LoginProject.xcdatamodeld in Sources */,
+				449332251AF0183A0032B29E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +431,7 @@
 				4493321C1AF017BA0032B29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4493321D1AF017BA0032B29E /* Build configuration list for PBXNativeTarget "LoginProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +440,7 @@
 				4493321F1AF017BA0032B29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
